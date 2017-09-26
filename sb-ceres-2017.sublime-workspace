@@ -1,0 +1,1077 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"BLFS_BYTES",
+				"BLFS_HEAD_BYTES_KEYCOUNT"
+			],
+			[
+				"busst",
+				"buselfs_state"
+			],
+			[
+				"commit",
+				"commit_merkle_tree_root_hash"
+			],
+			[
+				"busestt",
+				"buselfs_state"
+			],
+			[
+				"blfs_open",
+				"blfs_open_tjournal_entry"
+			],
+			[
+				"nugget_siz",
+				"nugget_size_bytes"
+			],
+			[
+				"interac",
+				"interact_prompt_user"
+			],
+			[
+				"flake_si",
+				"flake_size_bytes"
+			],
+			[
+				"busest",
+				"buselfs_state"
+			],
+			[
+				"buestat",
+				"buselfs_state"
+			],
+			[
+				"TJOUT",
+				"BLFS_CRYPTO_BYTES_TJ_HASH_OUT"
+			],
+			[
+				"glo",
+				"blfs_globalversion_commit"
+			],
+			[
+				"TEST_ASS",
+				"TEST_ASSERT_EQUAL_MEMORY"
+			],
+			[
+				"flakesize",
+				"flake_size"
+			],
+			[
+				"ab",
+				"absolute_offset"
+			],
+			[
+				"TYPE",
+				"BLFS_HEAD_HEADER_TYPE_TPMGLOBALVER"
+			],
+			[
+				"TEST_ASSERT_EQUAL_UIN",
+				"TEST_ASSERT_EQUAL_UINT64"
+			],
+			[
+				"ASSE",
+				"TEST_ASSERT_EQUAL_MEMORY"
+			],
+			[
+				"backsizeac",
+				"backstore_size_actual_int"
+			],
+			[
+				"buselfs",
+				"buselfs_state"
+			],
+			[
+				"BLFS_BMODE",
+				"BLFS_BACKSTORE_CREATE_MODE_CREATE"
+			],
+			[
+				"bl",
+				"blfs_create_header"
+			],
+			[
+				"buffer_ac",
+				"buffer_actual1"
+			],
+			[
+				"buffer_expec",
+				"buffer_expected_head1"
+			],
+			[
+				"buffer",
+				"buffer_actual2"
+			],
+			[
+				"blfs_",
+				"blfs_backstore_read_head_StubWithCallback"
+			],
+			[
+				"uint",
+				"uint32_t"
+			],
+			[
+				"list-styl",
+				"list-style-type"
+			],
+			[
+				"slide",
+				"slideshowActive"
+			],
+			[
+				"bundl",
+				"bundledStream"
+			],
+			[
+				"fileInodeH",
+				"fileInodeHashElement"
+			],
+			[
+				"CORE",
+				"CORE_TYPES〔variable〕"
+			],
+			[
+				"cryp",
+				"cryptType〔variable〕"
+			],
+			[
+				"self",
+				"selfUpdate〔function〕"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"e",
+				"edge1"
+			],
+			[
+				"ed",
+				"edge3"
+			],
+			[
+				"ede",
+				"edge2"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "wrap",
+		"selected_items":
+		[
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"save all",
+				"File: Save All"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"save al",
+				"File: Save All"
+			],
+			[
+				"on save",
+				"SublimeLinter: Don’t Show Errors on Save"
+			],
+			[
+				"report",
+				"SublimeLinter: Report (Open Files)"
+			],
+			[
+				"lint",
+				"SublimeLinter: Report (Open Files)"
+			],
+			[
+				"save a",
+				"File: Save All"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"case",
+				"Convert Case: Title Case"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"satisfy",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colorsub",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"minim",
+				"View: Toggle Minimap"
+			],
+			[
+				"disable",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"enable debug",
+				"SublimeLinter: Disable Debug Mode"
+			],
+			[
+				"sublimelin",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Clear Caches"
+			],
+			[
+				"subli sett",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"lint v",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"repor",
+				"SublimeLinter: Report (Open Files)"
+			],
+			[
+				"lint vi",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"clear cac",
+				"SublimeLinter: Clear Caches"
+			],
+			[
+				"lint this v",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"clear ca",
+				"SublimeLinter: Clear Caches"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"linter",
+				"SublimeLinter: Report (Open Files)"
+			],
+			[
+				"book",
+				"Bookmarks: Toggle"
+			],
+			[
+				"boo",
+				"Bookmarks: Toggle"
+			],
+			[
+				"bookm nex",
+				"Bookmarks: Select Next"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"toggle mi",
+				"View: Toggle Minimap"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 494.0
+	},
+	"console":
+	{
+		"height": 705.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Z/gitr/.svn/sb-ceres-2017"
+	],
+	"file_history":
+	[
+		"/Z/gitr/research/buselfs/test/test_metrics.c",
+		"/Z/gitr/research/buselfs/vendor/energymon/src/energymon-time-util.c",
+		"/Z/gitr/research/buselfs/src/crypto.c",
+		"/Z/gitr/research/buselfs/test/test_buselfs.c",
+		"/F/.bzvol/README.txt",
+		"/Z/gitr/research/buselfs/README.md",
+		"/Z/gitr/research/buselfs/src/mmc.c",
+		"/Z/gitr/research/buselfs/test/test_mmc.c",
+		"/Z/gitr/research/buselfs/test/test_crypto.c",
+		"/Z/gitr/research/buselfs/src/bitmask.c",
+		"/Z/gitr/research/buselfs/src/mmc.h",
+		"/Z/gitr/research/buselfs/test/test_aes.c",
+		"/Z/gitr/.github/StrongBox/README.md",
+		"/Z/gitr/.github/StrongBox/config/cmock_config.yml",
+		"/Z/gitr/.github/StrongBox/config/cexception_configured.h",
+		"/Z/gitr/.github/StrongBox/config/zlog_conf.conf",
+		"/Z/gitr/.github/StrongBox/config/unity_runner_config.yml",
+		"/Z/gitr/research/buselfs/vendor/buse.h",
+		"/Z/gitr/research/buselfs/src/interact.h",
+		"/Z/gitr/research/buselfs/test/test_io.c",
+		"/Z/gitr/research/buselfs/vendor/mmc.h",
+		"/Z/gitr/research/buselfs/src/crypto.h",
+		"/Z/gitr/research/buselfs/Makefile",
+		"/Z/gitr/research/buselfs/src/backstore.c",
+		"/Z/gitr/research/buselfs/src/backstore.h",
+		"/E/Shell Folders/Documents/.onedrive/~new-wireless.txt",
+		"/Z/gitr/research/buselfs/vendor/mmc-utils/mmc_cmds.c",
+		"/Z/gitr/research/buselfs/vendor/mmc-utils/mmc.c",
+		"/F/Azureus Downloads/[_] Unorganized/Academia.School.Simulator/Academia School Simulator/README.txt",
+		"/F/Azureus Downloads/[_] Unorganized/Academia.School.Simulator/README.txt",
+		"/Z/gitr/research/buselfs/vendor/mmc-utils/mmc_cmds.h",
+		"/Z/gitr/research/buselfs/src/vector.h",
+		"/Z/gitr/research/buselfs/src/buselfs.c",
+		"/H/$AVG/$XBIN/!Prose/HowItAllStarted.txt",
+		"/Z/gitr/xunnamius/pma.dev/public/config.inc.php",
+		"/Z/gitr/xunnamius/pma.dev/public/config.sample.inc.php",
+		"/Z/gitr/xunnamius/pma.dev/public/sql/create_tables.sql",
+		"/Z/gitr/xunnamius/pma.dev/public/themes/metro/sprites.lib.php",
+		"/Z/gitr/xunnamius/pma.dev/public/themes/metro/layout.inc.php",
+		"/Z/gitr/xunnamius/pma.dev/public-old/themes/metro/layout.inc.php",
+		"/Z/git (remote)/research/buselfs/src/buselfs.c",
+		"/Z/git (remote)/research/buselfs/src/crypto.h",
+		"/Z/git (remote)/research/buselfs/config/zlog_conf.conf",
+		"/Z/git (remote)/research/buselfs/test/test_aes.c",
+		"/Z/git (remote)/research/buselfs/build/test_aes.d",
+		"/Z/git (remote)/research/buselfs/.gitignore",
+		"/Z/git (remote)/research/buselfs/README.md",
+		"/Z/git (remote)/research/buselfs/src/crypto.c",
+		"/Z/git (remote)/research/buselfs/src/io.c",
+		"/Z/git (remote)/research/buselfs/test/test_crypto.c",
+		"/Z/git (remote)/research/energy-AES-1/results/april/final/microbench-ramdisk/seq/1KB/README.md",
+		"/Z/git (remote)/research/energy-AES-1/results/april/final/microbench-ramdisk/rnd/1KB/README.md",
+		"/Z/git (remote)/research/energy-AES-1/results/april/final/microbench-ramdisk/rnd/1KB/shmoo.big.ram+buse+aes-xts+ext4-fj.results",
+		"/Z/git (remote)/research/energy-AES-1/results/april/final/microbench-ramdisk/seq/5MB/README.md",
+		"/Z/git (remote)/research/buselfs/src/buselfs.h",
+		"/Z/git (remote)/research/buselfs/vendor/merkle-tree/src/mt_config.h",
+		"/Z/git (remote)/research/buselfs/test/test_buselfs.c",
+		"/K/4567 457457.txt",
+		"/F/SkyDrive/Documents/~new-wireless.txt",
+		"/Z/git (remote)/research/buselfs/src/backstore.h",
+		"/Z/git (remote)/research/buselfs/src/bitmask.h",
+		"/Z/git (remote)/research/buselfs/src/backstore.c",
+		"/Z/git (remote)/research/buselfs/build/Makefile",
+		"/Z/git (remote)/research/buselfs/vendor/aescrypt.h",
+		"/Z/git (remote)/research/buselfs/build/test.c",
+		"/Z/git (remote)/research/buselfs/vendor/aes-xts-impl/modetest.c",
+		"/Z/git (remote)/research/buselfs/vendor/aes-xts-impl/testvals/xts2.txt",
+		"/Z/git (remote)/research/buselfs/vendor/aes-xts-impl/testvals/xtsvec.txt",
+		"/Z/git (remote)/research/buselfs/vendor/aes-xts-impl/testvals/xts1.txt",
+		"/Z/git (remote)/research/buselfs/src/bitmask.c",
+		"/Z/git (remote)/research/buselfs/config/cexception_configured.h",
+		"/Z/git (remote)/research/buselfs/src/constants.h",
+		"/Z/git (remote)/research/buselfs/src/interact.c",
+		"/Z/git (remote)/research/buselfs/src/interact.h",
+		"/Z/git (remote)/research/buselfs/vendor/merkle-tree/Makefile",
+		"/Z/git (remote)/research/buselfs/test/test_backstore.c",
+		"/Z/git (remote)/research/buselfs/vendor/merkle-tree/src/mt_impl.c",
+		"/Z/git (remote)/research/buselfs/test/test_bitmask.c",
+		"/Z/git (remote)/research/buselfs/test/test_io.c",
+		"/Z/git (remote)/research/buselfs/test/test_vector.c",
+		"/Z/gitr/research/buselfs/vendor/libsodium/README.markdown",
+		"/Z/gitr/research/buselfs/.project",
+		"/Z/gitr/research/buselfs/.cproject",
+		"/Z/git (remote)/research/buselfs/vendor/merkle-tree/src/merkletree.h",
+		"/Z/git (remote)/research/buselfs/vendor/merkle-tree/src/mt_arr_list.h",
+		"/Z/git (remote)/research/buselfs/vendor/merkle-tree/README.md",
+		"/Z/git (remote)/research/buselfs/vendor/merkle-tree/src/mt_err.h",
+		"/Z/git (remote)/research/buselfs/vendor/merkle-tree/src/mt_arr_list.c",
+		"/Z/git (remote)/research/buselfs/build/mock_io.c",
+		"/Z/git (remote)/research/buselfs/vendor/khash.h",
+		"/Z/git (remote)/research/buselfs/build/test_backstore_runner.o",
+		"/Z/git (remote)/research/buselfs/vendor/test.c",
+		"/Z/git (remote)/research/buselfs/src/io.h",
+		"/Z/git (remote)/research/buselfs/vendor/uthash.h",
+		"/Z/git (remote)/research/buselfs/build/mock_io.h",
+		"/Z/git (remote)/research/buselfs/vendor/cmock/src/cmock.c",
+		"/Z/git (remote)/research/buselfs/vendor/unity/src/unity.c",
+		"/Z/git (remote)/research/buselfs/src/vector.c",
+		"/Z/git (remote)/research/buselfs/config/cmock_config.yml",
+		"/Z/git (remote)/research/buselfs/Makefile",
+		"/Z/git (remote)/research/buselfs/src/main.c",
+		"/C/Users/trefi/AppData/Local/Temp/Temp1_uthash-master.zip/uthash-master/src/utarray.h",
+		"/C/Users/trefi/AppData/Local/Temp/Temp1_uthash-master.zip/uthash-master/src/uthash.h",
+		"/C/Users/trefi/AppData/Local/Temp/Temp1_uthash-master.zip/uthash-master/src/utvector.h",
+		"/C/Users/trefi/AppData/Local/Temp/Temp1_uthash-master.zip/uthash-master/src/utstring.h",
+		"/Z/git (remote)/research/buselfs/src/vector.h",
+		"/Z/git (remote)/research/buselfs/src/head.h",
+		"/G/Virtual Machines/Elysium 3/Logs/VBox.log",
+		"/H/Visual Studio 15 Community/VC/include/zlog.h",
+		"/Z/git (remote)/research/buselfs/buselfs.sln",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/templates/page.liquid",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/templates/page.contact.liquid",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/sections/products.liquid",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/sections/collections.liquid",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/templates/collection.list.liquid",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/templates/collection.liquid",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/tests/fixtures/login.json",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/tests/fixtures/cart.json",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/src/assets/includes/header.liquid",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/public/.gitignore",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/gulpfile.js",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/templates/index.liquid",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/layout/theme.liquid",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/config/settings_data.json",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/snippets/theme-footer.liquid",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/config/settings_schema.json",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/assets/proto.css.liquid",
+		"/Z/git (remote)/web-mirrored/divine-immanence.com/shopify/snippets/theme-header.liquid"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 180.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 67.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 150.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sb-ceres-2017.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"energymon-time-util.c",
+				"vendor\\energymon\\src\\energymon-time-util.c"
+			],
+			[
+				"crypto",
+				"src\\crypto.c"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"buselfs.c",
+				"src\\buselfs.c"
+			],
+			[
+				"crypt",
+				"src\\crypto.c"
+			],
+			[
+				"crypt.c",
+				"src\\crypto.c"
+			],
+			[
+				"crypto.h",
+				"src\\crypto.h"
+			],
+			[
+				"crypto.c",
+				"src\\crypto.c"
+			],
+			[
+				"makefi",
+				"Makefile"
+			],
+			[
+				"makefil",
+				"build\\Makefile"
+			],
+			[
+				"cr.h",
+				"src\\crypto.h"
+			],
+			[
+				"test_aes",
+				"test\\test_aes.c"
+			],
+			[
+				".con",
+				"config\\zlog_conf.conf"
+			],
+			[
+				"test_aes.c",
+				"test\\test_aes.c"
+			],
+			[
+				"config/",
+				"config\\zlog_conf.conf"
+			],
+			[
+				"test_buse",
+				"test\\test_buselfs.c"
+			],
+			[
+				"test_crypto",
+				"test\\test_crypto.c"
+			],
+			[
+				"io.c",
+				"src\\io.c"
+			],
+			[
+				"readm",
+				"README.md"
+			],
+			[
+				"makef",
+				"build\\Makefile"
+			],
+			[
+				"make",
+				"build\\Makefile"
+			],
+			[
+				"bitmask.h",
+				"src\\bitmask.h"
+			],
+			[
+				"backs.h",
+				"src\\backstore.h"
+			],
+			[
+				"config",
+				"config\\cexception_configured.h"
+			],
+			[
+				"consta",
+				"src\\constants.h"
+			],
+			[
+				"bac.h",
+				"src\\backstore.h"
+			],
+			[
+				"backs.c",
+				"src\\backstore.c"
+			],
+			[
+				"configure",
+				"config\\cexception_configured.h"
+			],
+			[
+				"constant",
+				"src\\constants.h"
+			],
+			[
+				"buselfs.h",
+				"src\\buselfs.h"
+			],
+			[
+				"backstore.h",
+				"src\\backstore.h"
+			],
+			[
+				"interact.h",
+				"src\\interact.h"
+			],
+			[
+				"interact.c",
+				"src\\interact.c"
+			],
+			[
+				"test.c",
+				"build\\test.c"
+			],
+			[
+				"bitmask",
+				"src\\bitmask.c"
+			],
+			[
+				"backstore",
+				"src\\backstore.c"
+			],
+			[
+				"mt_con",
+				"vendor\\merkle-tree\\src\\mt_config.h"
+			],
+			[
+				"makefile",
+				"vendor\\merkle-tree\\Makefile"
+			],
+			[
+				"tebacksc",
+				"test\\test_backstore.c"
+			],
+			[
+				"test_bitma",
+				"test\\test_bitmask.c"
+			],
+			[
+				"io",
+				"src\\io.c"
+			],
+			[
+				"mt_impl",
+				"vendor\\merkle-tree\\src\\mt_impl.c"
+			],
+			[
+				"test_cr",
+				"test\\test_crypto.c"
+			],
+			[
+				"test_bu",
+				"test\\test_buselfs.c"
+			],
+			[
+				"interact",
+				"src\\interact.c"
+			],
+			[
+				"testbitmac",
+				"test\\test_bitmask.c"
+			],
+			[
+				"testbm.c",
+				"test\\test_bitmask.c"
+			],
+			[
+				"bitmask.c",
+				"src\\bitmask.c"
+			],
+			[
+				"test_crypto.c",
+				"test\\test_crypto.c"
+			],
+			[
+				"testbackstore",
+				"test\\test_backstore.c"
+			],
+			[
+				"ioc",
+				"src\\io.c"
+			],
+			[
+				"test_busec",
+				"test\\test_buselfs.c"
+			],
+			[
+				"test_backc",
+				"test\\test_backstore.c"
+			],
+			[
+				"testioc",
+				"test\\test_io.c"
+			],
+			[
+				"backstore.c",
+				"src\\backstore.c"
+			],
+			[
+				"mt_impl.c",
+				"vendor\\merkle-tree\\src\\mt_impl.c"
+			],
+			[
+				"test_bitmask.c",
+				"test\\test_bitmask.c"
+			],
+			[
+				"merkletree.h",
+				"vendor\\merkle-tree\\src\\merkletree.h"
+			],
+			[
+				"test",
+				"test\\test_io.c"
+			],
+			[
+				"back.c",
+				"src\\backstore.c"
+			],
+			[
+				"intera",
+				"src\\interact.c"
+			],
+			[
+				"test_crypt.c",
+				"test\\test_crypto.c"
+			],
+			[
+				"testio.c",
+				"test\\test_io.c"
+			],
+			[
+				"test_backst",
+				"test\\test_backstore.c"
+			],
+			[
+				"test_back.c",
+				"test\\test_backstore.c"
+			],
+			[
+				"backst",
+				"src\\backstore.c"
+			],
+			[
+				"test_backs.c",
+				"test\\test_backstore.c"
+			],
+			[
+				"backsto",
+				"src\\backstore.c"
+			],
+			[
+				"testback",
+				"test\\test_backstore.c"
+			],
+			[
+				"testio",
+				"test\\test_io.c"
+			],
+			[
+				"busel",
+				"src\\buselfs.c"
+			],
+			[
+				"mak",
+				"build\\Makefile"
+			],
+			[
+				"",
+				"test\\test_backstore.c"
+			],
+			[
+				"mock_io",
+				"build\\mock_io.c"
+			],
+			[
+				"test_bitm",
+				"test\\test_bitmask.c"
+			],
+			[
+				"back.h",
+				"src\\backstore.h"
+			],
+			[
+				"uth",
+				"vendor\\uthash.h"
+			],
+			[
+				"const",
+				"src\\constants.h"
+			],
+			[
+				"uthas",
+				"vendor\\uthash.h"
+			],
+			[
+				"cmock.c",
+				"vendor\\cmock\\src\\cmock.c"
+			],
+			[
+				"unity.c",
+				"vendor\\unity\\src\\unity.c"
+			],
+			[
+				"bitmaskc",
+				"src\\bitmask.c"
+			],
+			[
+				"bitmah",
+				"src\\bitmask.h"
+			],
+			[
+				"bitmas",
+				"src\\bitmask.c"
+			],
+			[
+				"uthash",
+				"vendor\\uthash.h"
+			],
+			[
+				"crypto.",
+				"src\\crypto.c"
+			],
+			[
+				"vector.h",
+				"src\\vector.h"
+			],
+			[
+				"io.h",
+				"src\\io.h"
+			],
+			[
+				"configured",
+				"config\\cexception_configured.h"
+			],
+			[
+				"configur",
+				"config\\cexception_configured.h"
+			],
+			[
+				"test_cry",
+				"test\\test_crypto.c"
+			],
+			[
+				"foote",
+				"shopify\\snippets\\theme-footer.liquid"
+			],
+			[
+				"theme-foot",
+				"shopify\\snippets\\theme-footer.liquid"
+			],
+			[
+				"shopiindex",
+				"shopify\\templates\\index.liquid"
+			],
+			[
+				"header.",
+				"src\\assets\\includes\\header.liquid"
+			],
+			[
+				"footer.li",
+				"src\\assets\\includes\\footer.liquid"
+			],
+			[
+				"theme-nav",
+				"shopify\\snippets\\theme-nav-main.liquid"
+			],
+			[
+				"toggle",
+				"shopify\\snippets\\theme-nav-toggled.liquid"
+			],
+			[
+				"the-foot",
+				"shopify\\snippets\\theme-footer.liquid"
+			],
+			[
+				"the-hea",
+				"shopify\\snippets\\theme-header.liquid"
+			],
+			[
+				"src/proto",
+				"src\\assets\\less\\proto.less"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"footer",
+				"src\\assets\\includes\\footer.liquid"
+			],
+			[
+				"foot",
+				"src\\assets\\includes\\footer.liquid"
+			],
+			[
+				"lay",
+				"src\\assets\\includes\\default-layout.liquid"
+			],
+			[
+				"packag",
+				"package.json"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"contact",
+				"src\\contact.php"
+			],
+			[
+				"conta",
+				"public\\contact.php"
+			],
+			[
+				"index",
+				"src\\index.php"
+			],
+			[
+				"header",
+				"src\\assets\\includes\\header.phtml"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"protoc.php",
+				"src\\protoC.php"
+			],
+			[
+				"less",
+				".lesshintrc"
+			],
+			[
+				".less",
+				".lesshintrc"
+			],
+			[
+				"packa",
+				"package.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 1000.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Z:\\gitr\\xunnamius\\grokking_algorithms\\grokking_algorithms.sublime-project"
+			],
+			[
+				"buse",
+				"Z:\\git (remote)\\research\\buse-fuse-losetup\\buse-fuse-losetup.sublime-project"
+			]
+		],
+		"width": 760.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
