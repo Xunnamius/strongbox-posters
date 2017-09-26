@@ -1,6 +1,2 @@
-*.aux
-*.bbl
-*.blg
-*.log
-*.pdf
-*-bix*
+*
+!.gitignore
