@@ -3,6 +3,5 @@
 *.blg
 *.log
 *.pdf
-*.tex
 out/
 *.sublime-workspace
