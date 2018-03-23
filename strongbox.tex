@@ -29,7 +29,7 @@
 \columnsep=100pt % This is the amount of white space between the columns in the poster
 \columnseprule=1pt % This is the thickness of the black line between the columns in the poster
 
-\usepackage[svgnames]{xcolor} % Specify colors by their 'svgnames', for a full list of all colors available see here: http://www.latextemplates.com/svgnames-colors
+\usepackage[svgnames]{xcolor} % Specify colors by their 'svgnames', for a full list of all colors available
 
 \usepackage{times} % Use the times font
 %\usepackage{palatino} % Uncomment to use the Palatino font
@@ -158,6 +158,7 @@ tick label style={font=\small},
 
 \usepackage[natbib=true,backend=bibtex,firstinits=true,style=numeric-comp,sorting=nyt,defernumbers,maxnames=2,maxcitenames=2,doi=false,isbn=false,url=false]{biblatex}
 \bibliography{strongbox}
+\renewcommand*{\bibfont}{\normalfont\footnotesize}
 
 \begin{document}
 
@@ -172,6 +173,7 @@ tick label style={font=\small},
 
 \begin{minipage}[b]{\linewidth}
 
+\includegraphics[height=5cm]{figures/uchicago_logo.png}
 \includegraphics[height=5cm]{figures/uchicago_logo.png}
 \vspace{0.1cm}
 \begin{center}
@@ -233,6 +235,20 @@ ARM big.LITTLE mobile processor and test its performance under the F2FS LFS.
 
 \section*{Motivation}
 
+Full disk encryption (FDE) is an essential technique for protecting the privacy
+of data at rest. Considering the state of the art, the conventional wisdom for
+securing this data is to use the AES block cipher in XTS mode~\cite{NISTXTS}.
+Potentially more performant steam ciphers are not typically considered.
+
+However, technological shifts in mobile devices overturn this conventional
+wisdom and make it possible to use more performant stream ciphers for disk
+encryption. First, mobile devices commonly use Flash Translation Layers (FTL)
+and/or Log-structured File Systems (LFSes)~\cite{LFS,F2FS,NILFS} to increase the
+lifetime of their solid-state drives (SSDs). Second, modern mobile devices like
+smartphones now come equipped with trusted hardware~\cite{TEE,TrustZone}, such
+as Trusted Execution Environments (TEEs) and secure storage
+areas~\cite{eMMC-standard}.
+
 We demonstrate the potential performance win from switching to a stream cipher
 by comparing AES-XTS to ChaCha20+Poly1305. \figref{motivation} shows the
 distinct advantage of the stream cipher over AES: a consistent $2.7\times$
@@ -247,18 +263,17 @@ encryption under Log-structured File Systems.
 
 \vspace{0.5cm}
 
-\begin{minipage}{0.5\columnwidth}
+\begin{minipage}{\columnwidth}
 \PAD 
 \input{img/heuristics-time.tex}
 \captionof{figure}{AES-XTS and ChaCha20+Poly1305 Comparison.}\label{fig:motivation}
 \PAD 
-\end{minipage}%
-\begin{minipage}{0.5\columnwidth}
+\end{minipage}\\
+\begin{minipage}{\columnwidth}
 \PAD 
 \centering
-\footnotesize
 \begin{tabular}{l|c|c} 
-  \textbf{File System} & \textbf{Total Write Ops} & \textbf{Overwrites}  \\
+  \small{\textbf{File System}} & \small{\textbf{Total Write Ops}} & \small{\textbf{Overwrites}}  \\
   \hline
   \hline
   ext4    &  16,756 & 10,787\\
@@ -272,24 +287,38 @@ encryption under Log-structured File Systems.
 \PAD 
 \end{minipage}
 
+\vspace{-1cm}
+
 %----------------------------------------------------------------------------------------
 %	OBJECTIVES
 %----------------------------------------------------------------------------------------
 
 \color{DarkSlateGray} % DarkSlateGray color for the rest of the content
 
-\section*{Design and Implementation}
+\section*{StrongBox Design}
 
-\begin{enumerate}
-\item Lorem ipsum dolor sit amet, consectetur.
-\item Nullam at mi nisl. Vestibulum est purus, ultricies cursus volutpat sit amet, vestibulum eu.
-\item Praesent tortor libero, vulputate quis elementum a, iaculis.
-\item Phasellus a quam mauris, non varius mauris. Fusce tristique, enim tempor varius porta, elit purus commodo velit, pretium mattis ligula nisl nec ante.
-\item Ut adipiscing accumsan sapien, sit amet pretium.
-\item Estibulum est purus, ultricies cursus volutpat
-\item Nullam at mi nisl. Vestibulum est purus, ultricies cursus volutpat sit amet, vestibulum eu.
-\item Praesent tortor libero, vulputate quis elementum a, iaculis.
-\end{enumerate}
+StrongBox's design is illustrated in \figref{overview}. StrongBox's metadata---
+the key to its operation---is encapsulated in three primary components: an in-
+memory \emph{Merkle Tree} and two disk-backed byte arrays, the \emph{Keycount
+Store} and the \emph{Transaction Journal}. These components are integrated into
+the \emph{Cryptographic Driver}, which is responsible for handling data
+encryption, verification, and decryption. These interactions take place while
+fulfilling high-level I/O requests received from the overlying LFS.
+
+\begin{minipage}{0.6\columnwidth}
+\PAD 
+\centering
+\includegraphics{overview}
+\captionof{figure}{Overview of the StrongBox construction.}\label{fig:overview}
+\PAD 
+\end{minipage}
+\begin{minipage}{0.4\columnwidth}
+\PAD 
+\centering
+\includegraphics{backstore}
+\captionof{figure}{Layout of StrongBox’s backing storage.}\label{fig:backstore}
+\PAD 
+\end{minipage}
 
 %----------------------------------------------------------------------------------------
 %	MATERIALS AND METHODS
@@ -297,7 +326,30 @@ encryption under Log-structured File Systems.
 
 \section*{StrongBox vs Dm-crypt under F2FS}
 
-Fusce magna risus, molestie ut porttitor in, consectetur sed mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque consectetur blandit pellentesque. Sed odio justo, viverra nec porttitor vel, lacinia a nunc. Suspendisse pulvinar euismod arcu, sit amet accumsan enim fermentum quis. In id mauris ut dui feugiat egestas. Vestibulum ac turpis lacinia nisl commodo sagittis eget sit amet sapien.
+To evaluate the performance of StrongBox, we measure the latency
+(seconds/milliseconds per operation) of both sequential and random read and
+write I/O operations across four different standard Linux filesystems: NILFS2,
+F2FS (shown below), Ext4 in ordered journaling mode, and Ext4 in full journaling mode.
+
+We include results of the F2FS LFS mounted atop both dm-crypt and StrongBox;
+median latency of different sized whole file read and write operations were
+normalized to unencrypted access. By harmonic mean, StrongBox is 1.6$\times$
+faster than dm-crypt for reads and 1.2$\times$ faster for writes.
+
+\begin{minipage}{\columnwidth}
+\PAD 
+\centering
+\includegraphics[scale=0.85]{first_bars}
+\captionof{figure}{Sequential I/O expanded F2FS result set.}\label{fig:microbench-f2fs-sequential}
+\PAD 
+\end{minipage}\\[1ex]
+\begin{minipage}{\columnwidth}
+\PAD 
+\centering
+\includegraphics[scale=0.85]{second_bars}
+\captionof{figure}{Random I/O expanded F2FS result set.}\label{fig:microbench-f2fs}
+\PAD 
+\end{minipage}
 
 %----------------------------------------------------------------------------------------
 %	CONCLUSIONS
@@ -327,6 +379,8 @@ performance over a standard dm-crypt configuration.
 
 \end{itemize}
 
+\textcolor{black}{\footnotesize{*StrongBox source is available on GitHub @ \texttt{https://github.com/ananonrepo2/StrongBox}}}
+
 \color{DarkSlateGray} % Set the color back to DarkSlateGray for the rest of the content
 
 %----------------------------------------------------------------------------------------
@@ -341,11 +395,4 @@ performance over a standard dm-crypt configuration.
 %----------------------------------------------------------------------------------------
 
 \end{multicols}
-
-\begin{minipage}[b]{\linewidth}
-\vspace{1cm}
-\noindent\makebox[\linewidth]{\rule{0.9\paperwidth}{0.4pt}}
-StrongBox source is available on GitHub @ \texttt{https://github.com/ananonrepo2/StrongBox}
-\end{minipage}
-
 \end{document}
