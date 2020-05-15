@@ -5,3 +5,4 @@
 *.pdf
 *-bix*
 *.sublime-workspace
+out/
