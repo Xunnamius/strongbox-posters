@@ -1,28 +1,45 @@
-LATEX=latex
 BIBTEX=bibtex
-DVIPS=dvips
-DVIPDF=dvipdf
-DVIPDF=dvipdfm
 PDFLATEX=pdflatex
+GHOSTSCRIPT=\gs
 
-FIG-FILES = figures/*.png img/*.tex
 TEX-FILES = *.tex
 BIB-FILES = *.bib
-TOP-LEVEL-ROOT = strongbox
-CRNAME = dickens-ceres-2017
+TOP-LEVEL-ROOT = _poster
+CRNAME = dickens-poster-ceres-2017
 
-all: ${TOP-LEVEL-ROOT}.pdf
+all: generate-pdf save-temporary $(CRNAME)
 
-${TOP-LEVEL-ROOT}.pdf: ${PDF-FILES} ${TEX-FILES} ${BIB-FILES}
+generate-pdf: ${TEX-FILES} ${BIB-FILES}
+	mkdir -p out
 	$(PDFLATEX) -shell-escape ${TOP-LEVEL-ROOT}
-	$(PDFLATEX) -shell-escape ${TOP-LEVEL-ROOT}
+	#$(PDFLATEX) -shell-escape ${TOP-LEVEL-ROOT}
 	$(BIBTEX) ${TOP-LEVEL-ROOT}
 	$(PDFLATEX) -shell-escape ${TOP-LEVEL-ROOT}
 	$(PDFLATEX) -shell-escape ${TOP-LEVEL-ROOT}
 
-final: poster.pdf
-	gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dEmbedAllFonts=true -sOutputFile=${CRNAME}.pdf -f poster.pdf
+save-temporary: generate-pdf
+	mkdir -p out
+	if test -e *.gz;  then mv *.gz out;  fi
+	if test -e *.aux; then mv *.aux out; fi
+	if test -e *.blg; then mv *.blg out; fi
+	if test -e *.bbl; then mv *.bbl out; fi
+	if test -e *.out; then mv *.out out; fi
+	if test -e *.log; then mv *.log out; fi
+	if test -e *.xml; then mv *.xml out; fi
+	if test -e *.fls; then mv *.fls out; fi
+	if test -e *.toc; then mv *.toc out; fi
+	if test -e *.lot; then mv *.lot out; fi
+	if test -e *.lof; then mv *.lof out; fi
+	if test -e *.fdb*; then mv *.fdb* out; fi
+	if test -e *.auxlock; then mv *.auxlock out; fi
+	if test -e *blx.bib; then mv *blx.bib out; fi
+	if test -e out/_minted*; then rm -rf out/_minted*; fi
+	if test -e _minted*; then mv -f _minted* out; fi
+
+$(CRNAME): $(TOP-LEVEL-ROOT).pdf
+	$(GHOSTSCRIPT) -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dEmbedAllFonts=true -sOutputFile=$(CRNAME).pdf -f $(TOP-LEVEL-ROOT).pdf
 
 clean:
-	rm -f *.auxlock *-blx.bib *.run.xml *.aux *.bbl *.blg *.log *.dvi *.out *.idx *.bak *~ *.toc *.lof out/*
-	rm -f *.pdf
+	rm -rf *.gz *.aux *.blg *.bbl *.out *.log *.xml *.fls *.toc *.lot *.lof *.fdb* *.auxlock *blx.bib out/_minted* _minted* out
+	mkdir out
+	touch out/.gitkeep
